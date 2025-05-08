@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Minha Loja na Shopee</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fafafa;
+    }
+    header {
+      background: #ee4d2d;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 1rem;
+    }
+    .produtos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+    .produto {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 1rem;
+      transition: transform 0.2s;
+    }
+    .produto:hover {
+      transform: scale(1.02);
+    }
+    .produto img {
+      width: 100%;
+      height: auto;
+    }
+    .produto h3 {
+      margin: 0.5rem 0;
+      font-size: 1.1rem;
+    }
+    .produto p {
+      margin: 0.5rem 0;
+      color: green;
+      font-weight: bold;
+    }
+    .produto a {
+      display: inline-block;
+      background: #ee4d2d;
+      color: white;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      padding: 15px;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 24px;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Minha Loja na Shopee</h1>
+  </header>
+
+  <div class="container">
+    <div class="produtos">
+      <div class="produto">
+        <img src="https://via.placeholder.com/300x300" alt="Produto 1" />
+        <h3>Produto 1</h3>
+        <p>R$ 59,90</p>
+        <a href="https://shopee.com.br/seu-produto1" target="_blank">Comprar na Shopee</a>
+      </div>
+
+      <div class="produto">
+        <img src="https://via.placeholder.com/300x300" alt="Produto 2" />
+        <h3>Produto 2</h3>
+        <p>R$ 89,90</p>
+        <a href="https://shopee.com.br/seu-produto2" target="_blank">Comprar na Shopee</a>
+      </div>
+
+      <div class="produto">
+        <img src="https://via.placeholder.com/300x300" alt="Produto 3" />
+        <h3>Produto 3</h3>
+        <p>R$ 39,90</p>
+        <a href="https://shopee.com.br/seu-produto3" target="_blank">Comprar na Shopee</a>
+      </div>
+    </div>
+  </div>
+
+  <a class="whatsapp-btn" href="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20produtos%20da%20loja" target="_blank">
+    💬
+  </a>
+</body>
+</html>
